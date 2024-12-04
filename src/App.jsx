@@ -1,14 +1,14 @@
-import { HashRouter as Router, NavLink, Routes, Route } from 'react-router-dom';
+import {  BrowserRouter as Router, NavLink, Routes, Route } from 'react-router-dom';  
 import './App.css';
 import { ChessList } from './ChessList';
 import { ChessSingle } from './ChessSingle';
 import { ChessMod } from './ChessMod';
-import { ChessCreate} from './ChessCreate';
-import { ChessDel} from './ChessDel';
+import { ChessCreate } from './ChessCreate';
+import { ChessDel } from './ChessDel';
 
-export const App=()=> {
+export const App = () => {
   return (
-    <Router>
+    <Router>  {/* Használjuk a HashRouter-t GitHub Pages esetén */}
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
@@ -30,4 +30,4 @@ export const App=()=> {
       </Routes>
     </Router>
   );
-}
+};
